@@ -20,9 +20,10 @@
 - npm i mongoose
 - npm i mongoose-auto-increment
 - npm i uuid
+- npm i lodash
 
 ### 额外
-'lodash,node-cron,require-directory,validate,chai,mocha,should,redis...'
+'node-cron,require-directory,validate,chai,mocha,should,redis...'
 "koa-convert",
 "koa-json",
 "koa-logger",
@@ -37,3 +38,7 @@
 - chai 模块是用来进行测试结果断言库，比如一个判断 1 + 1 是否等于 2
 - supertest 模块是http请求测试库，用来请求API接口
 
+
+### 后期添加redis(待实现)
+1. redis做上报缓存，如一个界面一天内被同一个人多次点击时，只计算一次热度。
+2. redis实现消息队列及进行定时任务处理，后期添加爬虫等程序，爬取热源。
